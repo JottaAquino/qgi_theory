@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or theory, please cite it as below."
+authors:
+  - family-names: "Aquino Junior"
+    given-names: "Marcos Eduardo de"
+    orcid: "https://orcid.org/0009-0005-9409-0397"
+    affiliation: "Independent Researcher"
+    city: "São Paulo"
+    country: "BR"
+title: "Quantum-Gravitational-Informational Theory: A First-Principles Framework for Fundamental Physics"
+version: 2.0
+date-released: 2025-10-20
+url: "https://github.com/JottaAquino/qgi-theory"
+repository-code: "https://github.com/JottaAquino/qgi-theory"
+license: CC-BY-4.0
+keywords:
+  - fundamental physics
+  - information geometry
+  - neutrino masses
+  - quantum gravity
+  - grand unification
+  - PMNS matrix
+  - fundamental constants
+  - falsifiable predictions
+type: software
+abstract: >
+  A first-principles framework in which gravitation, neutrino masses, 
+  PMNS mixing, quark masses with emergent GUT structure, electroweak 
+  correlations, and cosmological shifts emerge from a single informational 
+  constant α_info = 1/(8π³ ln π). The framework passes 19 independent tests 
+  across 7 sectors with precision <3%, providing >28σ statistical evidence. 
+  All predictions are falsifiable within 2027-2040 via JUNO, KATRIN, CMB-S4, 
+  FCC-ee, and other experiments.
+
