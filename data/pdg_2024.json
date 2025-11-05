@@ -1,0 +1,11 @@
+[
+  {"mu_GeV": 0.511, "alpha_inv": 137.036, "sin2thetaW": 0.23867},
+  {"mu_GeV": 2.0, "alpha_inv": 136.680, "sin2thetaW": 0.23223},
+  {"mu_GeV": 10.0, "alpha_inv": 131.550, "sin2thetaW": 0.23165},
+  {"mu_GeV": 91.188, "alpha_inv": 127.952, "sin2thetaW": 0.23153},
+  {"mu_GeV": 200.0, "alpha_inv": 123.530, "sin2thetaW": 0.23108}
+]
+
+
+
+

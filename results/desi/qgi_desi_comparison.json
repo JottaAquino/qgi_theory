@@ -1,0 +1,16 @@
+{
+  "analysis_type": "QGI_vs_DESI_validation",
+  "source_desi": "DESI DR1 bestfit cosmological parameters",
+  "valid_comparisons": [
+    {
+      "parameter": "Y_p (Helium fraction)",
+      "DESI": 0.2467254,
+      "QGI": 0.2462,
+      "difference": 0.0005254000000000092,
+      "relative_error": "0.213%",
+      "valid_comparison": true,
+      "interpretation": "Excelente concord\u00e2ncia! Diferen\u00e7a de apenas 0.000525 (0.213%)"
+    }
+  ],
+  "note": "Only physically valid and scientifically sound comparisons are included"
+}

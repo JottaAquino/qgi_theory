@@ -1,24 +1,27 @@
 # QGI Theory - Python Dependencies
-# Generated: October 20, 2025
+# Generated from environment.yml for pip compatibility
 
 # Core scientific computing
 numpy>=2.0.0
-pandas>=2.0.0
-matplotlib>=3.7.0
 scipy>=1.11.0
+matplotlib>=3.7.0
+pandas>=2.0.0
 
-# Optional for extended analysis
-jupyter>=1.0.0
-ipython>=8.0.0
-
-# For high-precision calculations (optional)
+# High-precision mathematics
 mpmath>=1.3.0
 
-# For figure generation (if needed)
-seaborn>=0.12.0
-plotly>=5.14.0
+# Symbolic mathematics
+sympy>=1.12.0
 
-# Version info
-# Python 3.11+ required
-# Tested on Python 3.13.3
+# Visualization
+seaborn>=0.12.0
+
+# Astronomy/Physics
+astropy>=5.0.0
+
+# Optional: Quantum computing (for IBM Quantum scripts)
+# qiskit>=0.45.0  # Uncomment if using IBM Quantum validation
+
+# Optional: Statistical analysis
+# scikit-learn>=1.3.0  # Uncomment if using machine learning features
 

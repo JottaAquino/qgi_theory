@@ -1,0 +1,31 @@
+{
+  "source": "DESI DR1 bestfit results",
+  "file": "bestfit.bestfit.txt",
+  "parameters": {
+    "#": 1.0,
+    "weight": 13.207978,
+    "minuslogpost": 101.94944,
+    "hrdrag": 0.29352889,
+    "omm": 2.0821789e-09,
+    "As": 0.11017071,
+    "omch2": 0.29353038,
+    "omegam": 0.13318558,
+    "omegamh2": 0.70639,
+    "omegal": 7.5106503,
+    "zrei": 0.24539541,
+    "YHe": 0.2467254,
+    "Y_p": 2.5855788,
+    "DHBBN": 2.0821789,
+    "A": 1.8675266,
+    "clamp": 14.074547,
+    "age": 151.35012,
+    "rdrag": 1059.2147,
+    "zdrag": 10194.944,
+    "H0rdrag": 12.660951,
+    "chi2__BAO": 6.8775022,
+    "minuslogprior": 6.8775022,
+    "minuslogprior__0": 12.660951,
+    "chi2": 12.660951
+  },
+  "note": "These are global cosmological parameters from DESI DR1 bestfit analysis"
+}

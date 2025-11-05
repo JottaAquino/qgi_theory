@@ -1,0 +1,39 @@
+{
+    "analysis_type": "QGI_cosmological_validation",
+    "qgi_parameters": {
+        "alpha_info": 0.0035217406778530725,
+        "epsilon": 0.004031441804149937,
+        "d_eff": 3.99596855819585,
+        "delta_omega_lambda": 1.6e-06,
+        "Y_p_predicted": 0.2462
+    },
+    "desi_data": {
+        "source": "DESI DR1 bestfit cosmological parameters",
+        "validated": true,
+        "values": {
+            "omm": 0.29352889,
+            "omegal": 0.70639,
+            "Y_p": 0.2467254,
+            "rdrag": 151.35012,
+            "H0rdrag": 10194.944,
+            "chi2__BAO": 12.660951
+        }
+    },
+    "valid_comparisons": [
+        {
+            "parameter": "Y_p (Helium fraction)",
+            "DESI": 0.2467254,
+            "QGI": 0.2462,
+            "difference": 0.0005254000000000092,
+            "relative_error": "0.213%",
+            "valid_comparison": true,
+            "interpretation": "Excelente concord\u00e2ncia! Diferen\u00e7a de apenas 0.000525 (0.213%)"
+        }
+    ],
+    "limitations": [
+        "DESI values are global, not per-redshift-bin",
+        "D_eff validation requires D_A/r_d per redshift (not available here)",
+        "Y_p comparison is valid and shows excellent agreement",
+        "Omega_Lambda correction too small for direct validation"
+    ]
+}

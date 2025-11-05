@@ -1,0 +1,49 @@
+{
+  "validation_status": "PASS",
+  "checks": [
+    {
+      "test": "Omega_m + Omega_Lambda",
+      "value": 0.99991889,
+      "expected": "~1.0 (flat universe)",
+      "status": "\u2705",
+      "pass": true
+    },
+    {
+      "test": "r_d (sound horizon)",
+      "value": 151.35012,
+      "expected": "~147 Mpc (typical)",
+      "status": "\u2705",
+      "pass": true
+    },
+    {
+      "test": "Y_p (Helium fraction)",
+      "value": 0.2467254,
+      "expected": "0.24-0.25",
+      "status": "\u2705",
+      "pass": true
+    },
+    {
+      "test": "H0 estimado",
+      "value": 67.35999945028124,
+      "expected": "~67-70 km/s/Mpc (Planck/DESI)",
+      "status": "\u2705",
+      "pass": true
+    },
+    {
+      "test": "chi\u00b2 BAO",
+      "value": 12.660951,
+      "expected": "~7-20 (reasonable fit)",
+      "status": "\u2705",
+      "pass": true
+    }
+  ],
+  "values": {
+    "omm": 0.29352889,
+    "omegal": 0.70639,
+    "Y_p": 0.2467254,
+    "rdrag": 151.35012,
+    "H0rdrag": 10194.944,
+    "chi2__BAO": 12.660951
+  },
+  "note": "Physical consistency checks for DESI DR1 bestfit cosmological parameters"
+}

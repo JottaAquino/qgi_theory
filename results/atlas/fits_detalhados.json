@@ -1,0 +1,26 @@
+{
+  "met_sumet": {
+    "modelo": "acceleration",
+    "epsilon": 0.073,
+    "s_inf": 1.0,
+    "r2": 0.934
+  },
+  "tau_pt": {
+    "modelo": "acceleration",
+    "epsilon": 0.045,
+    "s_inf": 1.0,
+    "r2": 0.782
+  },
+  "ht": {
+    "modelo": "peak",
+    "epsilon": 0.1,
+    "s_inf": 0.881,
+    "r2": 0.683
+  },
+  "met": {
+    "modelo": "peak",
+    "epsilon": 0.0412,
+    "s_inf": 1.0,
+    "r2": 0.516
+  }
+}

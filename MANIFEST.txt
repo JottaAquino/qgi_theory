@@ -1,0 +1,87 @@
+QGI Theory - Preprint Package Manifest
+======================================
+
+Package created: 2025-11-04
+Purpose: Complete reproducibility package for QGI manuscript
+
+STRUCTURE:
+----------
+preprint/
+├── README.md                          # Main documentation
+├── INDEX.md                           # Complete file index
+├── REPRODUCIBILITY.md                 # Step-by-step validation guide
+├── MANIFEST.txt                       # This file
+├── run_all_validations.sh             # Master validation script
+├── environment.yml                    # Conda environment
+├── requirements.txt                   # Python dependencies
+│
+├── scripts/                           # 12 validation scripts
+│   ├── QGI_validation.py              # Main suite (8 tests)
+│   ├── compute_alpha_info.py          # Ward closure
+│   ├── compute_delta_zeta.py          # Gravitational δ
+│   ├── compute_delta_analytical.py    # Alternative δ calc
+│   ├── compute_ew_observables.py      # EW predictions
+│   ├── neutrino_masses_anchored.py    # Absolute masses
+│   ├── neutrino_triplet_scan.py       # Triplet optimization
+│   ├── pmns_maxent_derivation.py      # PMNS angles (MaxEnt)
+│   ├── pmns_rg_fixedpoint.py          # PMNS angles (RG)
+│   ├── quark_mass_ratio.py            # Quark ratio
+│   ├── cosmology_shifts.py            # Cosmological shifts
+│   └── ibm_quantum_ghz_test.py        # GHZ state tests
+│
+├── results/                           # Result files organized by category
+│   ├── Core Validation (9 files):
+│   │   ├── QGI_validation_complete_results.json    # Canonical summary
+│   │   ├── QGI_validation_results.csv              # All values (CSV)
+│   │   ├── delta_results.json                      # Gravitational δ
+│   │   ├── delta_components.csv                    # δ components
+│   │   ├── chi2_complete_results.json              # Chi-squared analysis
+│   │   ├── statistical_analysis_complete.json      # Full statistics
+│   │   ├── neutrino_triplet_scan_results.json      # Triplet scan
+│   │   ├── ew_slope_numeric.json                   # EW slope
+│   │   └── ew_slope_info_variation.json            # EW robustness
+│   ├── quantum/                      # Quantum test results
+│   │   ├── ghz_results_FINAL.txt     # GHZ tests (16k shots)
+│   │   ├── ghz_results_NEW.txt       # Additional verification
+│   │   └── ghz_results_aer.txt       # Aer simulator results
+│   └── atlas/                        # ATLAS/CERN analysis results
+│       └── ATLAS_theoretical_predictions_QGI_v41.json
+│
+└── data/                              # Input data
+    ├── pdg_2024.json                  # PDG 2024 constants (experimental)
+    ├── ew_points.csv                  # EW measurements grid (experimental)
+    ├── delta_components.csv           # Component reference
+    └── DATA_SOURCES.md                # Complete data provenance
+
+TOTAL FILES: ~35+
+- Scripts: 15 Python files
+  - Core validation: 13 scripts
+  - Quantum tests: ibm_quantum_ghz_test.py, ghz_sim_aer.py
+  - ATLAS analysis: process_atlas_data.py (if available)
+- Results: 13+ files
+  - Core validation: 9 files
+  - Quantum tests: 3 result files
+  - ATLAS analysis: 1+ result files
+- Data: 4 input files (experimental data + references)
+- Documentation: 7 files (including DATA_SOURCES.md and READMEs in subdirectories)
+
+VERIFICATION:
+-------------
+All numerical values cited in manuscript are reproducible:
+✅ α_info = 0.003521740677853
+✅ ε = 0.004031441804149937
+✅ C_grav = -0.7653 (exactly -551/720)
+✅ δ = -0.1355
+✅ m₁ = 1.011 meV, m₂ = 9.10 meV, m₃ = 49.5 meV
+✅ c_d/c_u = 0.590
+✅ χ²_red = 1.44 (covariance), 0.41 (diagonal)
+✅ Bayes Factor = 8.7 × 10¹⁰
+
+QUICK START:
+------------
+1. conda env create -f environment.yml
+2. conda activate qgi
+3. ./run_all_validations.sh
+4. Compare results/ with published values
+
+For detailed instructions, see README.md and REPRODUCIBILITY.md
